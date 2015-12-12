@@ -107,14 +107,14 @@ INSTALLED_APPS += ("gunicorn", )
 # Static Assets
 # ------------------------
 
-STATICFILES_STORAGE = DEFAULT_FILE_STORAGE
-STATIC_URL = MEDIA_URL
+#STATICFILES_STORAGE = DEFAULT_FILE_STORAGE
+#STATIC_URL = MEDIA_URL
 
 # See: https://github.com/antonagestam/collectfast
 # For Django 1.7+, 'collectfast' should come before
 # 'django.contrib.staticfiles'
-AWS_PRELOAD_METADATA = True
-INSTALLED_APPS = ('collectfast', ) + INSTALLED_APPS
+#AWS_PRELOAD_METADATA = True
+#INSTALLED_APPS = ('collectfast', ) + INSTALLED_APPS
 
 # EMAIL
 # ------------------------------------------------------------------------------
