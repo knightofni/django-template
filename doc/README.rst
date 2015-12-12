@@ -1,7 +1,7 @@
 id_website
 ==============================
 
-A website for interior design firms. Should allow visitor to get a quotation.
+A template for a new django website
 
 
 LICENSE: BSD
