@@ -9,6 +9,7 @@ Local settings
 '''
 
 from .common import *  # noqa
+import os
 
 # DEBUG
 # ------------------------------------------------------------------------------
@@ -26,7 +27,13 @@ SECRET_KEY = env("DJANGO_SECRET_KEY", default='t7!g)jnza0pkvt_48ig&mb#r^n5j6fwk+
 EMAIL_HOST = 'localhost'
 EMAIL_PORT = 1025
 
-
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': str(ROOT_DIR.path('db.sqlite3')),
+    }
+}
+DATABASES['default']['ATOMIC_REQUESTS'] = True
 # CACHING
 # ------------------------------------------------------------------------------
 CACHES = {

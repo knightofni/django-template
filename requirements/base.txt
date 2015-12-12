@@ -40,3 +40,4 @@ redis>=2.10.0
 
 
 # Your custom requirements go here
+django-material==0.5.1
